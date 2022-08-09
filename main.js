@@ -8,7 +8,7 @@ window.onload = function(){
         }else{
             let resultado = Number(valorAlcool) / Number(valorGasolina);
 
-            resultado <= 0.7 ? document.getElementById("sResultado").text = "É mais vantajoso usar álcool!" : document.getElementById("sResultado").text = "É mais vantajoso usar gasolina!";
+            resultado <= 0.7 ? document.getElementById("sResultado").textContent = "É mais vantajoso usar álcool!" : document.getElementById("sResultado").textContent = "É mais vantajoso usar gasolina!";
         }
     }
 }
