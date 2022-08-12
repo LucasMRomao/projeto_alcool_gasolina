@@ -4,13 +4,18 @@
     </head>
     <body>
         <h3>Gasolina ou álcool?</h3>
-        <span>Insira o preço do álcool:</span>&nbsp;
-        <input type="number" id="iPrecoAlcool" /><br/>
-        <span>Insira o preço da gasolina:</span>&nbsp;
-        <input type="number" id="iPrecoGasolina" /><br/>
-        <button type="button" id="bVerificar">Verificar</button><br/>
-        <span id="sResultado"></span>
+        <div id="app">
+            <span>Insira o preço do álcool:</span>&nbsp;
+            <input type="number" id="iPrecoAlcool" v-model="alcool"/><br/>
+            <span>Insira o preço da gasolina:</span>&nbsp;
+            <input type="number" id="iPrecoGasolina" v-model="gasolina"/><br/>
+            {{resultado}}
+        </div>
 
+        <!--<script src="https://raw.githubusercontent.com/lodash/lodash/4.17.15-npm/core.js"></script>-->
+        <!--<script src="https://unpkg.com/vue@3"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
